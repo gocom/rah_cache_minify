@@ -23,11 +23,9 @@ class rah_cache_minify
      * Minify.
      */
 
-    public function minify()
+    public function minify($event, $step, $data)
     {
-        $data = rah_cache::data();
-        $data = rah_cache__minify_Minify_HTML::minify($data);
-        rah_cache::data($data);
+        return rah_cache__minify_Minify_HTML::minify($data['contents']);
     }
 }
 
