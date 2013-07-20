@@ -1,3 +1,9 @@
 h1. Minify module for rah_cache
 
 p. This is a minify module for rah_cache, a full-page caching solution for Textpattern CMS.
+
+h2. Installing
+
+p. Using "Composer":http://getcomposer.org:
+
+bc. $ composer require rah/rah_cache_minify
