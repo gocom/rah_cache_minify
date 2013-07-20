@@ -20,7 +20,7 @@
         "php": ">=5.2.0",
         "textpattern/lock": ">=4.5.0,<4.7.0",
         "textpattern/installer": "*",
-        "rah/rah_cache": "*",
+        "rah/rah_cache": "0.1.*",
         "rah/rah_autoload": "*",
         "mrclay/minify": "2.1.6"
     }
