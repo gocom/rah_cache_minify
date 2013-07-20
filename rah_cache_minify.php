@@ -28,7 +28,7 @@
  * Minifies HTML.
  */
 
-class rah_cache_minify
+class Rah_Cache_Minify
 {
     /**
      * Constructor.
@@ -49,4 +49,4 @@ class rah_cache_minify
     }
 }
 
-new rah_cache_minify();
+new Rah_Cache_Minify();
