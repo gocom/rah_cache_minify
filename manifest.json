@@ -8,5 +8,5 @@
     "order"      : 5,
 	"flags"      : 0,
 	"help"       : {"file" : ["./README.textile"]},
-	"code"       : {"file" : ["./rah_cache_minify.php, ./inc/compress_html.php"]}
+	"code"       : {"file" : ["./rah_cache_minify.php"]}
 }

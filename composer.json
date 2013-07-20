@@ -1,0 +1,27 @@
+{
+    "name": "rah/rah_cache_minify",
+    "description": "Minify module for rah_cache",
+    "keywords": ["textpattern", "plugin", "html", "page", "cache", "minify", "compress"],
+    "homepage": "https://github.com/gocom/rah_cache_minify",
+    "license": "GPL-2.0",
+    "type": "textpattern-plugin",
+    "authors": [
+        {
+            "name": "Jukka Svahn",
+            "homepage": "http://rahforum.biz",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gocom/rah_cache_minify/issues",
+        "source": "https://github.com/gocom/rah_cache_minify"
+    },
+    "require": {
+        "php": ">=5.2.0",
+        "textpattern/lock": ">=4.5.0,<4.7.0",
+        "textpattern/installer": "*",
+        "rah/rah_cache": "*",
+        "rah/rah_autoload": "*",
+        "mrclay/minify": "2.1.6"
+    }
+}

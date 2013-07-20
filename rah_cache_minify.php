@@ -45,7 +45,7 @@ class Rah_Cache_Minify
 
     public function minify($event, $step, $data)
     {
-        return rah_cache__minify_Minify_HTML::minify($data['contents']);
+        return Minify_HTML::minify($data['contents']);
     }
 }
 
