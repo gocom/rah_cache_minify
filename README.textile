@@ -7,3 +7,9 @@ h2. Installing
 p. Using "Composer":http://getcomposer.org:
 
 bc. $ composer require rah/rah_cache_minify
+
+h2. Changelog
+
+h3. Version 0.1.0 - upcoming
+
+* Initial release.
