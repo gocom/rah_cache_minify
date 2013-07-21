@@ -10,7 +10,7 @@ bc. $ composer require rah/rah_cache_minify
 
 h2. Changelog
 
-h3. Version 0.1.1 - upcoming
+h3. Version 0.1.1 - 2013/07/21
 
 * Fixed: Corrected the plugin type.
 
