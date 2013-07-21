@@ -36,16 +36,47 @@ class Rah_Cache_Minify
 
     public function __construct()
     {
-        register_callback(array($this, 'minify'), 'rah_cache.store');
+        register_callback(array($this, 'minify'), 'textpattern_end');
     }
 
     /**
-     * Minify.
+     * Whether the page is a plain old HTML.
+     *
+     * @return bool
      */
 
-    public function minify($event, $step, $data)
+    protected function isHTML()
     {
-        return Minify_HTML::minify($data['contents']);
+        if (function_exists('headers_list') && $headers = headers_list())
+        {
+            foreach ((array) $headers as $header)
+            {
+                $header = strtolower($header);
+
+                if (strpos($header, 'content-type:') === 0 && !strpos($header, 'text/html'))
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    /**
+     * Minifies the HTML page.
+     *
+     * Replaces output buffer with minified HTML.
+     */
+
+    public function minify()
+    {
+        if ($this->isHTML())
+        {
+            $page = ob_get_contents();
+            ob_clean();
+            echo Minify_HTML::minify($page);
+        }
     }
 }
 
