@@ -2,7 +2,7 @@
     "name"       : "rah_cache_minify",
     "description": "Minify module for rah_cache",
     "version"    : "0.1.0",
-    "type"       : 5,
+    "type"       : 0,
     "author"     : "Jukka Svahn",
     "author_uri" : "http://rahforum.biz",
     "order"      : 4,
