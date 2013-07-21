@@ -10,6 +10,6 @@ bc. $ composer require rah/rah_cache_minify
 
 h2. Changelog
 
-h3. Version 0.1.0 - upcoming
+h3. Version 0.1.0 - 2013/07/21
 
 * Initial release.
