@@ -71,7 +71,7 @@ class Rah_Cache_Minify
 
     public function minify()
     {
-        if ($this->isHTML())
+        if ($this->isHTML() && class_exists('Minify_HTML'))
         {
             $page = ob_get_contents();
             ob_clean();
